@@ -9,7 +9,7 @@ COPY my-react-app/src ./src
 COPY my-react-app/public ./public
 
 # Debugging step: List files in the current directory
-RUN ls -l /usr/src/app
+RUN ls -l my-react-app/src
 
 RUN npm install
 
