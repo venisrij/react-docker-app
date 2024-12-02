@@ -8,6 +8,9 @@ COPY my-react-app/package-lock.json ./package-lock.json
 COPY my-react-app/src ./src
 COPY my-react-app/public ./public
 
+# Debugging step: List files in the current directory
+RUN ls -l /usr/src/app
+
 RUN npm install
 
 COPY . .
